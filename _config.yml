@@ -2,6 +2,8 @@ title: InkSight Legal & Support
 description: Privacy policy and support information for the InkSight iOS app.
 lang: en
 markdown: kramdown
+url: https://sabaaziz991-hash.github.io
+baseurl: /inksight-legal
+repository: sabaaziz991-hash/inksight-legal
 exclude:
   - README.md
-
