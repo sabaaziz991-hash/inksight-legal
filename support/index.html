@@ -1,0 +1,71 @@
+---
+layout: null
+title: InkSight Support
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Support and troubleshooting for the InkSight handwriting-analysis app for iPhone.">
+    <title>Support · InkSight</title>
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <span class="brand-mark" aria-hidden="true">✎</span>
+        InkSight
+      </a>
+    </header>
+    <main>
+      <p class="updated">Support for InkSight on iPhone</p>
+      <h1>How can we help?</h1>
+      <p class="lede">Most issues can be resolved with the steps below. If you still need help, open a support issue and include the app version, iOS version, and a description of what happened.</p>
+
+      <aside class="notice">
+        <strong>Protect your privacy.</strong>
+        Do not attach handwriting scans, exported reports, names, addresses, or other sensitive personal information to a public GitHub issue.
+      </aside>
+
+      <section class="card">
+        <h2>Scanning and photo recognition</h2>
+        <ul>
+          <li>Use even lighting and avoid shadows across the writing.</li>
+          <li>Keep all four page edges visible and hold the camera parallel to the page.</li>
+          <li>Use the border tool if automatic page detection selects the wrong area.</li>
+          <li>Try enhancement for faint writing; turn it off if dark paper or colored ink loses detail.</li>
+          <li>For best results, use several lines of handwriting rather than a single word.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Reports and local data</h2>
+        <p>Reports are saved locally on the device. InkSight does not provide an account or cloud sync. Export a PDF or Markdown copy when you need to keep a report outside the app.</p>
+        <p>If a report cannot be saved, use the Retry action shown in the result screen. If an older report cannot be read after an update, InkSight keeps the remaining reports available and displays a warning.</p>
+      </section>
+
+      <section class="card">
+        <h2>Premium subscription</h2>
+        <p>If an active subscription is not recognized, open Profile in InkSight and choose Restore Purchases. Confirm that the device uses the Apple Account that made the purchase.</p>
+        <div class="actions">
+          <a class="button" href="https://support.apple.com/billing">Apple Billing Support</a>
+          <a href="https://support.apple.com/HT202039">Manage subscriptions</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Contact support</h2>
+        <p>Open a GitHub support issue with reproduction steps. Because issues are public, describe the behavior without including handwriting content or personal data.</p>
+        <div class="actions">
+          <a class="button" href="{{ site.github.repository_url }}/issues/new?template=support.yml">Open a Support Issue</a>
+          <a href="{{ '/privacy-policy/' | relative_url }}">Read the Privacy Policy</a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a href="{{ '/' | relative_url }}">InkSight Legal & Support</a>
+    </footer>
+  </body>
+</html>
+

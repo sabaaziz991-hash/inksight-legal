@@ -1,0 +1,175 @@
+:root {
+  color-scheme: light;
+  --canvas: #f7f3e9;
+  --card: #fffdf7;
+  --ink: #17271d;
+  --muted: #657269;
+  --forest: #28563a;
+  --forest-soft: #e4eee6;
+  --line: #d9dfd7;
+  --gold: #e8b14f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--forest);
+  font-weight: 600;
+}
+
+.site-header,
+main,
+.site-footer {
+  width: min(760px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+.site-header {
+  padding: 52px 0 22px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+  font-size: 1.15rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.brand-mark {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 11px;
+  background: var(--forest);
+  color: white;
+}
+
+main {
+  padding-bottom: 48px;
+}
+
+h1 {
+  max-width: 18ch;
+  margin: 16px 0 8px;
+  font-size: clamp(2rem, 8vw, 3.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+h2 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+}
+
+p {
+  margin: 0 0 14px;
+}
+
+.lede,
+.updated,
+.site-footer {
+  color: var(--muted);
+}
+
+.updated {
+  font-size: 0.9rem;
+}
+
+.card,
+.notice {
+  margin: 20px 0;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--card);
+  box-shadow: 0 10px 30px rgb(23 39 29 / 5%);
+}
+
+.notice {
+  border-left: 5px solid var(--gold);
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.link-card {
+  display: block;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--card);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.link-card:hover {
+  border-color: var(--forest);
+  transform: translateY(-1px);
+}
+
+.link-card span {
+  display: block;
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.94rem;
+  font-weight: 400;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--forest);
+  color: white;
+  text-decoration: none;
+}
+
+.site-footer {
+  padding: 22px 0 44px;
+  border-top: 1px solid var(--line);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 520px) {
+  .site-header {
+    padding-top: 34px;
+  }
+
+  .card,
+  .notice,
+  .link-card {
+    padding: 18px;
+    border-radius: 15px;
+  }
+}
+

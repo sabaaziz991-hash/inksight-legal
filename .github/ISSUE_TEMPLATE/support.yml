@@ -1,0 +1,55 @@
+name: InkSight support request
+description: Report an InkSight app problem without sharing handwriting or personal data.
+title: "[Support] "
+labels:
+  - support
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contacting InkSight support. GitHub issues are public. Do not upload handwriting scans, reports, names, addresses, or other personal information.
+  - type: input
+    id: app-version
+    attributes:
+      label: InkSight version
+      placeholder: "For example: 1.0 (1)"
+    validations:
+      required: true
+  - type: input
+    id: ios-version
+    attributes:
+      label: iOS version and device
+      placeholder: "For example: iOS 26.5, iPhone 17"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Scanning or photo import
+        - Analysis or results
+        - Saved reports or export
+        - Premium subscription
+        - Privacy or legal question
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the behavior without including handwriting content or personal data.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Opened…
+        2. Selected…
+        3. Saw…
+    validations:
+      required: true
+
